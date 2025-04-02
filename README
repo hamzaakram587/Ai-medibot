@@ -1,0 +1,76 @@
+Overview
+
+Ask Chatbot is an AI-powered chatbot application built using Streamlit and LangChain. It leverages FAISS vector store for document retrieval and Mistral-7B model from Hugging Face to provide intelligent responses based on provided context.
+
+Features
+
+Utilizes Hugging Face embeddings for vector storage and retrieval
+
+FAISS for efficient similarity search
+
+Retrieval-Augmented Generation (RAG) using LangChain
+
+Streamlit UI for user-friendly interactions
+
+Installation
+
+Prerequisites
+
+Ensure you have Python 3.8+ installed along with the required dependencies.
+
+Setup
+
+Create and activate a virtual environment (optional but recommended):
+
+python -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate  # On Windows
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Create a .env file and add necessary environment variables if required.
+
+Running the Application
+
+Start the Streamlit application using:
+
+streamlit run app.py
+
+Folder Structure
+
+<repo-name>/
+│── vectorstore/          # FAISS vector store directory
+│── app.py               # Main chatbot application
+│── requirements.txt     # Required dependencies
+│── .env                 # Environment variables (optional)
+└── README.md            # Project documentation
+
+Usage
+
+Run the application.
+
+Enter your query in the chatbot interface.
+
+The chatbot will retrieve relevant information and respond accordingly.
+
+Technologies Used
+
+Python
+
+Streamlit
+
+LangChain
+
+FAISS
+
+Hugging Face Models
+
+License
+
+This project is licensed under the MIT License.
+
+Contributing
+
+Feel free to fork this repository and contribute to improving the chatbot!
